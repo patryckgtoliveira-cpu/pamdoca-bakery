@@ -439,3 +439,133 @@ ul, ol { padding: 0; list-style: none; }
 .js-revelar .produtos .produto:nth-child(2) { transition-delay: .08s; }
 .js-revelar .produtos .produto:nth-child(3) { transition-delay: .16s; }
 .js-revelar .produtos .produto:nth-child(4) { transition-delay: .24s; }
+
+.topo__nav a[aria-current="page"] { color: var(--vermelho); }
+
+.botao--contorno { color: var(--vermelho); border-color: var(--vermelho); background: transparent; }
+@media (hover: hover) { .botao--contorno:hover { background: var(--vermelho); color: var(--papel); } }
+
+.botao--rosa { background: var(--rosa); color: var(--vermelho); }
+.botao--contorno-rosa { color: var(--rosa); border-color: var(--rosa); background: transparent; }
+@media (hover: hover) {
+  .botao--rosa:hover { background: transparent; color: var(--rosa); border-color: var(--rosa); }
+  .botao--contorno-rosa:hover { background: var(--rosa); color: var(--vermelho); }
+}
+
+.botao--icone { display: inline-flex; align-items: center; gap: .7rem; }
+.botao--icone svg { width: 17px; height: 17px; flex: none; }
+
+.orcamento-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .9rem;
+  margin-top: 2.2rem;
+}
+
+.cardapio__mais { text-align: center; margin-top: clamp(56px, 7vw, 88px); }
+
+.pagina-topo {
+  position: relative;
+  background: var(--rosa);
+  padding: clamp(96px, 12vw, 150px) var(--gutter);
+  overflow: hidden;
+}
+.pagina-topo__texto {
+  position: relative;
+  z-index: 1;
+  max-width: 38rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.pagina-topo__texto p { margin-top: 1.4rem; color: var(--texto); font-size: 1.05rem; }
+.titulo--grande { font-size: clamp(2.5rem, 6vw, 4.4rem); }
+
+@media (max-width: 760px) {
+  .pagina-topo { padding-top: 140px; }
+}
+
+.produto__pedir {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--linha);
+}
+.produto__pedir .rotulo { width: 100%; color: var(--texto-2); font-weight: 400; }
+.produto__pedir a {
+  font-family: var(--f-rotulo);
+  font-weight: 700;
+  font-size: .75rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--vermelho);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: opacity .2s var(--ease);
+}
+@media (hover: hover) { .produto__pedir a:hover { opacity: .6; } }
+
+.instagram {
+  background: var(--papel-2);
+  border-top: 1px solid var(--linha);
+  padding: clamp(88px, 12vw, 150px) var(--gutter);
+}
+.insta-grade {
+  max-width: var(--largura);
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.insta-grade--posts {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 28px;
+  align-items: start;
+}
+.insta-post { width: 100%; }
+.insta-post .instagram-media { min-width: 0 !important; width: 100% !important; margin: 0 !important; }
+
+.insta-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 48px clamp(24px, 6vw, 72px);
+  border: 1px solid var(--linha);
+  background: var(--papel);
+  max-width: 30rem;
+}
+.insta-perfil img { width: 120px; margin-bottom: .4rem; }
+.insta-perfil__titulo {
+  font-family: var(--f-titulo);
+  font-stretch: condensed;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  color: var(--texto);
+}
+
+.faixa-orcamento {
+  background: var(--vermelho);
+  color: var(--rosa);
+  padding: clamp(88px, 11vw, 140px) var(--gutter);
+  display: grid;
+  grid-template-columns: auto minmax(0, 34rem);
+  justify-content: center;
+  align-items: center;
+  gap: clamp(40px, 7vw, 110px);
+}
+.faixa-orcamento__selo { width: clamp(200px, 26vw, 340px); }
+.faixa-orcamento__texto p { margin-top: 1.2rem; color: var(--rosa); }
+.faixa-orcamento .orcamento-botoes { justify-content: flex-start; }
+.rotulo--rosa { color: var(--rosa); }
+.titulo--rosa { color: var(--rosa); }
+
+@media (max-width: 760px) {
+  .faixa-orcamento { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .faixa-orcamento .orcamento-botoes { justify-content: center; }
+}
