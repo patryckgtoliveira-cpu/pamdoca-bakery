@@ -15,3 +15,9 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   }, { rootMargin: '0px 0px -10% 0px' });
   itens.forEach((el) => obs.observe(el));
 }
+
+if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 0.9, anchors: { offset: -72 } });
+  const quadro = (t) => { lenis.raf(t); requestAnimationFrame(quadro); };
+  requestAnimationFrame(quadro);
+}
