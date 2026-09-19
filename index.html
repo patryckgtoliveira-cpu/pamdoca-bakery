@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pamdoca Bakery</title>
+  <meta name="description" content="Pamdoca Bakery — doces e salgados feitos à mão, por encomenda. Cookies, empadão, palha italiana e torta de limão.">
+  <meta name="theme-color" content="#fdfcfa">
+  <link rel="icon" href="assets/laco.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo" id="topo">
+    <div class="topo__inner">
+      <a href="#inicio" class="topo__logo" aria-label="Pamdoca Bakery — início">
+        <img src="assets/logo-marrom.webp" alt="Pamdoca Bakery" width="2629" height="674">
+      </a>
+      <nav class="topo__nav" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#visite">Visite</a>
+      </nav>
+      <a class="topo__cta" href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20fazer%20uma%20encomenda."
+         target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="capa" id="inicio">
+      <img class="capa__foto" src="assets/img/capa-mesa.webp" alt="" width="2400" height="1600" fetchpriority="high">
+      <div class="capa__conteudo">
+        <span class="rotulo rotulo--claro">Feito à mão</span>
+        <h1 class="capa__logo">
+          <img src="assets/logo-creme.webp" alt="Pamdoca Bakery" width="2629" height="674">
+        </h1>
+        <p class="capa__texto">Doces e salgados caseiros, preparados em pequenas fornadas e sob encomenda.</p>
+        <div class="capa__acoes">
+          <a class="botao botao--creme" href="#cardapio">Ver cardápio</a>
+          <a class="link-sublinhado link-sublinhado--claro"
+             href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20fazer%20uma%20encomenda."
+             target="_blank" rel="noopener">Encomendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <img class="ornamento ornamento--cerejas" src="assets/cerejas.webp" alt="" width="390" height="499" loading="lazy">
+      <img class="ornamento ornamento--laco" src="assets/laco.webp" alt="" width="645" height="332" loading="lazy">
+      <img class="ornamento ornamento--bule" src="assets/bule.webp" alt="" width="665" height="474" loading="lazy">
+      <img class="ornamento ornamento--bolo" src="assets/bolo.webp" alt="" width="644" height="592" loading="lazy">
+
+      <div class="sobre__texto revelar">
+        <span class="rotulo">Sobre nós</span>
+        <h2 class="titulo">Uma lojinha de receitas com carinho</h2>
+        <p>
+          A Pamdoca nasceu na cozinha de casa, entre fornadas de cookies e tortas
+          para a família. Hoje, cada pedido continua sendo preparado assim:
+          com ingredientes escolhidos, tempo e atenção aos detalhes.
+        </p>
+        <a class="link-sublinhado" href="https://www.instagram.com/pam_lojinha_/" target="_blank" rel="noopener">
+          Acompanhe no Instagram · @pam_lojinha_
+        </a>
+      </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+      <div class="secao-cabecalho revelar">
+        <span class="rotulo">Cardápio</span>
+        <h2 class="titulo">Da nossa cozinha</h2>
+        <p class="secao-cabecalho__apoio">Consulte sabores, tamanhos e valores pelo WhatsApp.</p>
+      </div>
+
+      <ul class="produtos">
+        <li class="produto revelar">
+          <figure class="produto__foto">
+            <img src="assets/img/cookies.webp" alt="Cookies com pedaços de chocolate sobre tábua de madeira" width="900" height="1600" loading="lazy">
+          </figure>
+          <h3 class="produto__nome">Cookies</h3>
+          <p class="produto__desc">Crocantes nas bordas, macios no centro e com pedaços generosos de chocolate.</p>
+          <a class="link-sublinhado" href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20encomendar%20cookies."
+             target="_blank" rel="noopener">Encomendar</a>
+        </li>
+
+        <li class="produto revelar">
+          <figure class="produto__foto">
+            <img src="assets/img/empadao.webp" alt="Empadão de frango servido em forma de alumínio" width="900" height="1600" loading="lazy">
+          </figure>
+          <h3 class="produto__nome">Empadão</h3>
+          <p class="produto__desc">Massa amanteigada que desmancha e recheio cremoso de frango.</p>
+          <a class="link-sublinhado" href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20encomendar%20um%20empad%C3%A3o."
+             target="_blank" rel="noopener">Encomendar</a>
+        </li>
+
+        <li class="produto revelar">
+          <figure class="produto__foto">
+            <img src="assets/img/palha-italiana.webp" alt="Pedaços de palha italiana polvilhados com açúcar" width="900" height="1600" loading="lazy">
+          </figure>
+          <h3 class="produto__nome">Palha italiana</h3>
+          <p class="produto__desc">Brigadeiro com biscoito, cortado à mão e finalizado com açúcar.</p>
+          <a class="link-sublinhado" href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20encomendar%20palha%20italiana."
+             target="_blank" rel="noopener">Encomendar</a>
+        </li>
+
+        <li class="produto revelar">
+          <figure class="produto__foto">
+            <img src="assets/img/torta-limao.webp" alt="Potes de torta de limão com raspas por cima" width="900" height="1600" loading="lazy">
+          </figure>
+          <h3 class="produto__nome">Torta de limão</h3>
+          <p class="produto__desc">Base crocante, creme suave e raspas de limão, servida no potinho.</p>
+          <a class="link-sublinhado" href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20encomendar%20torta%20de%20lim%C3%A3o."
+             target="_blank" rel="noopener">Encomendar</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="encomendas" id="encomendas">
+      <div class="encomendas__painel encomendas__painel--rosa revelar">
+        <span class="rotulo">Encomendas</span>
+        <h2 class="titulo">Como fazer o seu pedido</h2>
+        <ol class="passos">
+          <li>
+            <span class="passos__num">01.</span>
+            <div>
+              <h3>Escolha</h3>
+              <p>Veja o cardápio e as novidades no nosso Instagram.</p>
+            </div>
+          </li>
+          <li>
+            <span class="passos__num">02.</span>
+            <div>
+              <h3>Chame no WhatsApp</h3>
+              <p>Conte o que deseja, a quantidade e a data de retirada.</p>
+            </div>
+          </li>
+          <li>
+            <span class="passos__num">03.</span>
+            <div>
+              <h3>Retire ou receba</h3>
+              <p>Combinamos juntos a melhor forma de entrega.</p>
+            </div>
+          </li>
+        </ol>
+        <a class="botao botao--vermelho"
+           href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20fazer%20uma%20encomenda."
+           target="_blank" rel="noopener">Fazer encomenda</a>
+      </div>
+
+      <div class="encomendas__painel encomendas__painel--vermelho">
+        <img class="encomendas__selo revelar" src="assets/selo-rosa.webp" alt="Pamdoca Bakery" width="1438" height="815" loading="lazy">
+      </div>
+    </section>
+
+    <section class="visite" id="visite">
+      <div class="visite__grade">
+        <div class="visite__texto revelar">
+          <span class="rotulo">Visite</span>
+          <h2 class="titulo">Venha nos ver</h2>
+
+          <dl class="dados">
+            <div>
+              <dt class="rotulo">Endereço</dt>
+              <dd>Rua das Flores, 123 — Centro<br>Curitiba · PR</dd>
+            </div>
+            <div>
+              <dt class="rotulo">WhatsApp</dt>
+              <dd><a href="https://wa.me/554198588988" target="_blank" rel="noopener">+55 41 9858-8988</a></dd>
+            </div>
+            <div>
+              <dt class="rotulo">Instagram</dt>
+              <dd><a href="https://www.instagram.com/pam_lojinha_/" target="_blank" rel="noopener">@pam_lojinha_</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="visite__ilustracao revelar">
+          <img src="assets/bule.webp" alt="" width="665" height="474" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <img class="rodape__logo" src="assets/logo-creme.webp" alt="Pamdoca Bakery" width="2629" height="674" loading="lazy">
+    <nav class="rodape__links" aria-label="Redes">
+      <a href="https://www.instagram.com/pam_lojinha_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/554198588988" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#inicio">Voltar ao topo</a>
+    </nav>
+    <p class="rodape__copy">© <span id="ano">2026</span> Pamdoca Bakery</p>
+  </footer>
+
+  <a class="whats-flutuante" href="https://wa.me/554198588988?text=Ol%C3%A1%2C%20Pamdoca!%20Gostaria%20de%20fazer%20uma%20encomenda."
+     target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C8.86 3 3.04 8.8 3.04 15.96c0 2.29.6 4.52 1.74 6.49L3 29l6.72-1.76a13 13 0 0 0 6.32 1.61h.01c7.17 0 13-5.8 13-12.96C29.05 8.8 23.21 3 16.04 3Zm0 23.68h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.23-3.99 1.04 1.07-3.88-.26-.4a10.72 10.72 0 0 1-1.66-5.75c0-5.95 4.85-10.8 10.8-10.8 2.89 0 5.6 1.12 7.64 3.16a10.7 10.7 0 0 1 3.16 7.63c0 5.96-4.85 10.73-10.85 10.73Zm5.92-8.04c-.32-.16-1.92-.95-2.22-1.05-.3-.11-.51-.16-.73.16-.22.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.37-.5-2.6-1.6-.96-.86-1.61-1.91-1.8-2.23-.19-.32-.02-.5.14-.66.15-.14.32-.38.49-.56.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.69 0 1.58 1.16 3.12 1.32 3.33.16.21 2.28 3.47 5.52 4.87.77.33 1.37.53 1.84.68.77.25 1.48.21 2.03.13.62-.09 1.92-.78 2.19-1.54.27-.75.27-1.4.19-1.54-.08-.13-.3-.21-.62-.37Z"/></svg>
+  </a>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    const topo = document.getElementById('topo');
+    const atualizaTopo = () => topo.classList.toggle('topo--rolado', window.scrollY > 40);
+    atualizaTopo();
+    window.addEventListener('scroll', atualizaTopo, { passive: true });
+
+    const itens = document.querySelectorAll('.revelar');
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-revelar');
+      const obs = new IntersectionObserver((entradas) => {
+        entradas.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('visivel'); obs.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      itens.forEach((el) => obs.observe(el));
+    }
+  </script>
+</body>
+</html>
